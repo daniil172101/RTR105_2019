@@ -31,4 +31,6 @@ komanda '&' - liek komandai stradāt backgrounda;
 
 'cd ~'- pārvietoties mājas direktorijā;
 
-'mkdir' - 
+'mkdir ManaMape' - izveidot direktoriju ar nosaukumu 'ManaMape';
+
+'echo Pirmais teksts > aaa.txt' - uzrakstīt tekstu (dzēsot tekstu,kurš bija uzrakstīts šajā failā) 'Pirmais teksts' failā aaa.txt vai izveidot failu ar šo tekstu; 
