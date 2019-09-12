@@ -1,0 +1,59 @@
+    1* 
+    2  quartus
+    3  calc
+    4  firefox 
+    5  firefox &
+    6  echo $0
+    7  uname 
+    8  man uname
+    9  uname -a
+   10  whoami
+   11  who
+   12  pwd
+   13  ls
+   14  ls - l
+   15  ls -l
+   16  ls -a
+   17  ls -al
+   18  pwd
+   19  cd .
+   20  cd ..
+   21  ls
+   22  ls -la
+   23  cd sc
+   24  cd ..
+   25  ls -a
+   26  ls -la
+   27  cd .
+   28  pwd
+   29  cd ..
+   30  pwd
+   31  cd ~
+   32  pwd
+   33  cd /
+   34  cd home/
+   35  cd user/
+   36  cd /
+   37  cd home/user/
+   38  cd ~/
+   39  cd ~/Documents/
+   40  whoami
+   41  cd
+   42  echo $0
+   43  sh
+   44  ls
+   45  pwd
+   46  cd /
+   47  mkdir ManaMape
+   48  cd
+   49  pwd
+   50  mkdir ManaMape
+   51  ls
+   52  ls -l
+   53  cd ManaMape/
+   54  cd
+   55  pwd
+   56  rmdir ManaMape/
+   57  ls -al
+   58  history
+   59  history > history_20190212.txt
