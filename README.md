@@ -4,3 +4,5 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
 & - liek komandai stradāt backgrounda;
 
 echo - attēlo tekstu;
+
+uname -
