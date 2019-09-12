@@ -1,0 +1,76 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  calc
+    4  history
+    5  touch aaa.txt
+    6  ls
+    7  ls -l
+    8  cat aaa.txt 
+    9  echo Pirmais teksts
+   10  echo Pirmais teksts > aaa.txt 
+   11  ls -l
+   12  ls-l aaa.txt 
+   13  ls -l aaa.txt 
+   14  cat aaa.txt 
+   15  echo Otrais teksts > aaa.txt 
+   16  cat aaa.txt 
+   17  echo Pirmais teksts > aaa.txt 
+   18  echo Otrais teksts >> aaa.txt 
+   19  cat aaa.txt 
+   20  ls -l aaa.txt 
+   21  nano aaa.txt 
+   22  cat aaa.txt 
+   23  cp aaa.txt bbb.txt
+   24  ls
+   25  ls -l aaa.txt bbb.txt 
+   26  cd /
+   27  mv ~/aaa.txt ~/Documents/ccc.txt
+   28  cd
+   29  ls -l
+   30  ls -l Documents/
+   31  cat Documents/ccc.txt 
+   32  pwd
+   33  mv ./Documents/ccc.txt  ddd.txt
+   34  ls -l
+   35  mkdir ManaMape
+   36  mk *.txt ManaMape/
+   37  mv *.txt ManaMape/
+   38  ls -l
+   39  cd ManaMape/
+   40  ls -l
+   41  cd
+   42  cd ManaMape/
+   43  rm bbb.txt 
+   44  ls -l
+   45  cd
+   46  rm ManaMape/
+   47  rm -r ManaMape/
+   48  ls
+   49  nano MansPirmaisSkripts.sh
+   50  ls
+   51  echo $PATH
+   52  ls
+   53  ls /bin | grep ls
+   54  ls -l /bin/ls
+   55  cat /bin/ls
+   56  ls -l /bin/ls
+   57  ~/MansPirmaisSkripts.sh
+   58  echo $PATH
+   59  $PATH=$PATH:~
+   60  $PATH=$PATH:/~
+   61  PATH=$PATH:~/
+   62  echo $PATH
+   63  MansPirmaisSkripts.sh
+   64  ls -l
+   65  chmod 740 MansPirmaisSkripts.sh 
+   66  ls -l
+   67  MansPirmaisSkripts.sh 
+   68  ls -l
+   69  ls -l ManaMapeAuto/
+   70  cat ManaMapeAuto/fff.txt 
+   71  nano MansPirmaisSkripts.sh 
+   72  MansPirmaisSkripts.sh 
+   73  ls -l
+   74  cat MansPirmaisSkripts.sh 
+   75  history
+   76  history > history_20190912b.txt
