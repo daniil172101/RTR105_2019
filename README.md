@@ -3,8 +3,6 @@ Studiju kursa Datormācība (pamatkurss) elektroniskā klade
 
 komanda '&' - liek komandai stradāt backgrounda;
 
-'echo' - attēlo tekstu;
-
 'uname' - paradīt informāciju par sistēmu;
 
 'whoami' - paradīt informāciju par lietotāju;
@@ -25,7 +23,7 @@ komanda '&' - liek komandai stradāt backgrounda;
 
 'cd .'- pārvietoties direktorijā, kur mēs esam tagad;
 
-'cd ..'- pārvietoties augšeja direktorijas līmenī (līdz sakņu direktorijas);
+'cd ..'- pārvietoties augšeja direktorijas līmenī (**līdz sakņu direktorijas**);
 
 'cd /'- pārvietoties sakņu direktorijā;
 
@@ -37,6 +35,20 @@ komanda '&' - liek komandai stradāt backgrounda;
 
 'history' - lietotas komandas vēsture;
 
-'echo Pirmais teksts > aaa.txt' - uzrakstīt tekstu (dzēsot tekstu,kurš bija uzrakstīts šajā failā) 'Pirmais teksts' failā aaa.txt vai izveidot failu ar šo tekstu; 
+'echo Pirmais teksts > aaa.txt' - uzrakstīt tekstu (**dzēsot tekstu**,kurš bija uzrakstīts šajā failā) 'Pirmais teksts' failā aaa.txt vai izveidot failu ar šo tekstu; 
 
 'touch aaa.txt' - mainīt laika zīmi failam aaa.txt.Ja fails neeksistē, tad fails būs izveidots;
+
+'echo' - attēlot uzrakstīto tekstu;
+
+'echo Otrais teksts >> aaa.txt' - uzrakstīt tekstu (**nedzēsot tekstu**,kurš bija uzrakstīts šajā failā) 'Otrais teksts' failā aaa.txt vai izveidot failu ar šo tekstu; 
+
+'nano aaa.txt' - atvert failu aaa.txt teksta redaktorā Nano;
+
+'cp aaa.txt bbb.txt' - kopēt failu aaa.txt direktorija, kur atrodas lietotājs ar nosaukumu bbb.txt ;
+
+'mv aaa.txt bbb.txt' - pārvietot failu aaa.txt direktorija, kur atrodas lietotājs ar nosaukumu bbb.txt ;
+
+'rm bbb.txt' - dzēst failu ar nosaukumu bbb.txt;
+
+'chmod ' -nomainīt faila piekļuves tiesības;
