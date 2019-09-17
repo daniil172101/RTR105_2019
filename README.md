@@ -1,5 +1,5 @@
 # RTR105_2019
-Studiju kursa Datormācība (pamatkurss) elektroniskā klade
+Studiju kursa *Datormācība (pamatkurss)* elektroniskā klade:
 
 komanda '&' - liek komandai stradāt backgrounda;
 
