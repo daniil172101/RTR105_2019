@@ -29,9 +29,9 @@ komanda '&' - liek komandai stradāt backgrounda;
 
 'cd ~'- pārvietoties mājas direktorijā;
 
-'mkdir ManaMape' - izveidot direktoriju ar nosaukumu 'ManaMape';
+'mkdir ManaMape' - izveidot direktoriju ar nosaukumu "ManaMape";
 
-'rmdir ManaMape' - dzēst tukšu direktoriju ar nosaukumu 'ManaMape';
+'rmdir ManaMape' - dzēst tukšu direktoriju ar nosaukumu "ManaMape";
 
 'history' - lietotas komandas vēsture;
 
@@ -41,7 +41,7 @@ komanda '&' - liek komandai stradāt backgrounda;
 
 'echo' - attēlot uzrakstīto tekstu;
 
-'echo Otrais teksts >> aaa.txt' - uzrakstīt tekstu (**nedzēsot tekstu**,kurš bija uzrakstīts šajā failā) 'Otrais teksts' failā aaa.txt vai izveidot failu ar šo tekstu; 
+'echo Otrais teksts >> aaa.txt' - uzrakstīt tekstu (**nedzēsot tekstu**,kurš bija uzrakstīts šajā failā) "Otrais teksts" failā aaa.txt vai izveidot failu ar šo tekstu; 
 
 'nano aaa.txt' - atvert failu aaa.txt teksta redaktorā Nano;
 
@@ -52,3 +52,7 @@ komanda '&' - liek komandai stradāt backgrounda;
 'rm bbb.txt' - dzēst failu ar nosaukumu bbb.txt;
 
 'chmod ' -nomainīt faila piekļuves tiesības;
+
+'gcc hello.c' -kompilēt failu "hello.c" ;
+
+'gcc hello.c -o hello'- kompilēt failu "hello.c" un nosaukt izpildamo failu "hello" ;
