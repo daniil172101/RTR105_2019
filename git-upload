@@ -5,5 +5,6 @@ git config --global user.email daniksurmach@gmail.com
 git add .
 #git commit -m "20171012_09_55"
 git commit -m $1
+git pull
 git push origin master
 fi
