@@ -10,5 +10,4 @@ void main()
 	char b;
 	b = ~a;
 	printf("operācija <<: ~%d  rezultāts %d\n",a,b);
-
 }

@@ -1,0 +1,186 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  git clone https://github.com/daniil172101/RTR105_2019
+    5  cd RTR105_2019/darbi/
+    6  pwd
+    7  firefox &
+    8  pwd
+    9  nano if_tests_1.c
+   10  gcc if_tests_1.c 
+   11  nano if_tests_1.c
+   12  gcc if_tests_1.c 
+   13  ./a.out 
+   14  nano if_tests_1.c
+   15  gcc if_tests_1.c 
+   16  ./a.out 
+   17  nano if_tests_1.c
+   18  gcc if_tests_1.c 
+   19  ./a.out 
+   20  cp if_tests_1.c if_tests_2.c 
+   21* 
+   22  gcc if_tests_2.c 
+   23  ./a.out 
+   24  cp if_tests_1.c if_tests_3.c 
+   25  nano if_tests_3.c
+   26  gcc if_tests_3.c 
+   27  ./a.out 
+   28  nano if_tests_3.c
+   29  gcc if_tests_3.c 
+   30  ./a.out 
+   31  nano if_tests_3.c
+   32  gcc if_tests_3.c 
+   33  ./a.out 
+   34  nano if_tests_2.c
+   35  gcc if_tests_2.c 
+   36  ./a.out 
+   37  nano if_tests_1.c
+   38  gcc if_tests_1.c 
+   39  ./a.out 
+   40  nano if_tests_1.c
+   41  gcc if_tests_1.c 
+   42  ./a.out 
+   43  firefox &
+   44  nano if_tests_3.c
+   45  gcc if_tests_3.c 
+   46  ./a.out 
+   47  nano if_tests_3.c
+   48  gcc if_tests_3.c 
+   49  ./a.out 
+   50  cat if_tests_3.c
+   51  nano if_tests_3.c
+   52  gcc if_tests_3.c 
+   53  ./a.out 
+   54  nano if_tests_3.c
+   55  gcc if_tests_3.c 
+   56  ./a.out 
+   57  nano if_tests_2.c
+   58  gcc if_tests_2.c
+   59  nano if_tests_2.c
+   60  gcc if_tests_2.c
+   61  ./a.out 
+   62  nano if_tests_2.c
+   63  gcc if_tests_2.c
+   64  ./a.out 
+   65  gcc if_tests_3.c
+   66  ./a.out 
+   67  nano if_tests_3.c
+   68  cp if_tests_3.c if_tests_even_odd.c
+   69  nano if_tests_even_odd.c
+   70  gcc if_tests_even_odd.c 
+   71  ./a.out 
+   72  cat if_tests_even_odd.c
+   73  ls -l
+   74  gcc operation_bitwise_not.c 
+   75  ./a.out 
+   76  nano operation_bitwise_not.c 
+   77  gcc operation_bitwise_not.c 
+   78  ./a.out 
+   79  nano operation_bitwise_not.c 
+   80  gcc operation_bitwise_not.c 
+   81  ./a.out 
+   82  cp if_tests_even_odd.c  if_tests_even_odd_with_tik_toc.c 
+   83  nano if_tests_even_odd_with_tik_toc.c 
+   84  gcc if_tests_even_odd_with_tik_toc.c 
+   85  nano if_tests_even_odd_with_tik_toc.c 
+   86  gcc if_tests_even_odd_with_tik_toc.c 
+   87  ./a.out 
+   88  firefox &
+   89  nano if_tests_even_odd_with_tik_toc.c 
+   90  gcc if_tests_even_odd_with_tik_toc.c 
+   91  nano if_tests_even_odd_with_tik_toc.c 
+   92  gcc if_tests_even_odd_with_tik_toc.c 
+   93  nano if_tests_even_odd_with_tik_toc.c 
+   94  gcc if_tests_even_odd_with_tik_toc.c 
+   95  ./a.out 
+   96  nanoif_tests_even_odd_with_tik_toc.c 
+   97  nano if_tests_even_odd_with_tik_toc.c 
+   98  gcc if_tests_even_odd_with_tik_toc.c 
+   99  ./a.out 
+  100  nano if_tests_even_odd_with_tik_toc.c 
+  101  ./a.out 
+  102  nano if_tests_even_odd_with_tik_toc.c 
+  103  ./a.out 
+  104  nano if_tests_even_odd_with_tik_toc.c 
+  105  gcc if_tests_even_odd_with_tik_toc.c 
+  106  ./a.out 
+  107  nano if_tests_even_odd_with_tik_toc.c 
+  108  gcc if_tests_even_odd_with_tik_toc.c 
+  109  ./a.out 
+  110  nano if_tests_even_odd_with_tik_toc.c 
+  111  gcc if_tests_even_odd_with_tik_toc.c 
+  112  ./a.out 
+  113  cp if_tests_1.c  while_tests_1.c
+  114  nano while_tests_1.c 
+  115  gcc while_tests_1.c 
+  116  ./a.out 
+  117  nano while_tests_1.c 
+  118  gcc while_tests_1.c 
+  119  ./a.out 
+  120  nano while_tests_1.c 
+  121  gcc while_tests_1.c 
+  122  ./a.out 
+  123  nano while_tests_1.c 
+  124  gcc while_tests_1.c 
+  125  ./a.out 
+  126  nano while_tests_1.c 
+  127  gcc while_tests_1.c 
+  128  ./a.out 
+  129  nano while_tests_1.c 
+  130  cp while_tests_1.c while_tests_2.c 
+  131  nano while_tests_2.c 
+  132  gcc while_tests_2.c 
+  133  ./a.out 
+  134  gcc while_tests_2.c 
+  135  2
+  136  3
+  137  4
+  138  ./a.out 
+  139  3
+  140  gcc while_tests_2.c 
+  141  nano while_tests_2.c 
+  142  gcc while_tests_2.c 
+  143  ./a.out 
+  144  5
+  145  4
+  146  cp while_tests_1.c for_tests_1.c 
+  147  nano for_tests_1.c 
+  148  gcc for_tests_1.c 
+  149  ./a.out 
+  150  cp while_tests_2.c for_tests_2.c 
+  151  nano for_tests_2.c 
+  152  gcc for_tests_2.c 
+  153  nano for_tests_2.c exit
+  154  gcc for_tests_2.c 
+  155  ./a.out 
+  156  2
+  157  3
+  158  4
+  159  nano for_tests_2.c exit
+  160  gcc for_tests_2.c 
+  161  ./a.out 
+  162  3
+  163  2
+  164  ./a.out 
+  165  nano for_tests_2.c exit
+  166  nano for_tests_2.c
+  167  gcc for_tests_2.c 
+  168  ./a.out 
+  169  cp for_tests_2.c for_tests_3.c 
+  170  nano for_tests_3.c
+  171  gcc for_tests_3.c 
+  172  nano for_tests_3.c
+  173  gcc for_tests_3.c 
+  174  ./a.out 
+  175  nano for_tests_3.c
+  176  gcc for_tests_3.c 
+  177  nano for_tests_3.c
+  178  gcc for_tests_3.c 
+  179  nano for_tests_3.c
+  180  gcc for_tests_3.c 
+  181  ./a.out 
+  182  ls -l
+  183  rm a.out 
+  184  cd ..
+  185  ls -l
+  186  history > history_20191010.txt
