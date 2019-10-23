@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int user_function_5()
+int skaitla_uzminejums()
  {
  int i_uf;
  printf("Cienījamais lietotājs, lūdzu, ievadi skaitli:");
@@ -8,19 +8,22 @@ int user_function_5()
  return i_uf;
  }
 
-void user_function_4(int i_uf, double d_uf);
-
 void main()
  {
- int i_main, N=5;
+ int skaitlis, N=7;
 
- i_main=user_function_5();
+ skaitlis=skaitla_uzminejums();
 
- while(i_main!=N)
+ while(skaitlis<N)
   {
-  printf("Reaģējot uz manas lietotāja funkcijas darbībam, Tu esi ievadījis %d\n", i_main);
-  i_main=user_function_5();
+  printf("Skaitlis %d ir mazāks nekā skaitlis, kuru esmu iedomājis\n", skaitlis);
+  skaitlis=skaitla_uzminejums();
+ while(skaitlis>N)
+  {
+  printf("Skaitlis %d ir lielāks nekā skaitlis, kuru esmu iedomājis\n", skaitlis );
+  skaitlis=skaitla_uzminejums();
   }
-  printf("Tā kā esi ievadījis 5, tad jautājumu vairs nav!\n");
+  }
+  printf("Apsveicu, tu esi ievadījis 7!\n");
  }
 

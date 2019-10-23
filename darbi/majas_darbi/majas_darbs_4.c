@@ -1,19 +1,21 @@
 #include<stdio.h>
 
-int user_function_6(int i_uf)
- {
- i_uf++;
- printf("Cienījamais lietotājs, sveicu Tevi no savas lietotāja funkcijas %d. reizi!\n",i_uf);
- return i_uf;
- }
+float calculate_area(int);
 
 void main()
  {
- int i_main=0, N=5;
-
- i_main=user_function_6(i_main);
-
- while(i_main<N)
-  i_main=user_function_6(i_main);
+ int radius;
+ float area;
+ printf("\nEnter the radius of the circle :");
+ scanf("%d", &radius);
+ area = calculate_area(radius);
+ printf("\nArea of circle : %f ",area);
+ return 0;
  }
 
+float calculate_area(int radius)
+ {
+ float areaCircle;
+ areaCircle = 3.14 * radius * radius;
+ return (areaCircle);
+ }
