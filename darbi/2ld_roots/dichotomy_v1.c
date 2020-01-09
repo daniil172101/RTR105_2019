@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main() {
- float a=0.1,c ,b=5 ,x ,delta_x=1.e-5/*0.00001*/,funkca, funkcb, funkcx;
+ float a,c ,b ,x ,delta_x/*0.00001*/,funkca, funkcb, funkcx;
  int i=0;
 
   printf("Lietotājs,lūdzu, ievadi sākuma robežu: ");
@@ -18,7 +18,7 @@ int main() {
   scanf ("%f", &c);
   funkca = (1+a)*exp(a) - c; funkcb = (1+b)*exp(b) - c;
 
-  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\t\t\t\t",a,a,c,funkca);
+  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\t\t\t\t\t\t\t",a,a,c,funkca);
   printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\n",b,b,c,funkcb);
 
  while ((b-a)>delta_x){
@@ -34,6 +34,6 @@ int main() {
  }
 
  printf("intervāls ir sašaurināts %d reizēs\n",i);
- printf("Sākne atrodas pie x=%.3f, jo (1+x)*exp(x) ir %.3f\n",x,(1+x)*exp(x));
+ printf("Sākne atrodas pie x=%.5f, jo (1+x)*exp(x) ir %.3f\n",x,(1+x)*exp(x));
  return 0;
 }
