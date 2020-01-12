@@ -1,3 +1,11 @@
+<!-- https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax -->
+# Laboratory work Nr.1. - Taylor series - report
+
+## Theory
+Izmantojot Teilora rundu, var vieglāk atrast funkcijas vērtību, aizstājot funkciju ar pakāpes serijas summu.   
+
+### Code
+```
 #include<stdio.h>
 #include<math.h>
 
@@ -42,4 +50,38 @@ void main(){
  printf("R=\t\t   -----------\n");
  printf("\t\t\tk\n");
 }
+
+
+```
+Comments about code  
+
+### Result
+```
+Funkcijas (1+x)*exp(x) aprēķināšana: 
+Lietotājs, lūdzu, ievadi x vērtību: 2.05
+(1 + 2.05)*exp(2.05) = 23.69
+a0 = 3.050000e+00	S0 =3.05
+a999 = 0.000000e+00	S999 =23.69
+a1000 = 0.000000e+00	S1000 =23.69
+
+		1000
+		----
+		\		        k
+		 \		(1+x)*x
+f(x)=		|	    ----------------
+		 /		   k!
+		/
+		----
+		k=0
+
+			x
+R=		   -----------
+			k
+
+```
+
+### Analysis
+Comments about results  
+
+### Figures
 
