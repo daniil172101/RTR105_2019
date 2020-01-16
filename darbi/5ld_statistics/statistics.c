@@ -57,11 +57,12 @@ void main()
  for (i=0;len > i ;i++){
  if (str2[i] == str2[i+1])
   j++;
+ else if (str2[i] != str2[i+1]){
  if (moda==j){
    printf("Ievadiitas rindas moda ir %d\n", str2[i]);
    printf("----------------------------------\n");
-   j=0;
  }
+ j=0;}
  printf("%d\t\t",moda);
  printf("%d\n",j);
 }
