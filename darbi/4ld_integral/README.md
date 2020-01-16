@@ -1,3 +1,11 @@
+<!-- https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax -->
+# Laboratory work Nr.4. - Integral - report
+
+## Theory
+Izmantojot Teilora rundu, var vieglāk atrast funkcijas vērtību, aizstājot funkciju ar pakāpes serijas summu.   
+
+### Code
+```
 #include<stdio.h>
 #include<math.h>
 void main(){
@@ -49,3 +57,24 @@ void main(){
  printf("integral, using Simpson's rule: %.5f\n",int2);
  printf("integral, using trapezoidal rule: %.5f\n",int3);
 }
+
+```
+Comments about code  
+
+### Result
+```
+Lietotājs,lūdzu, ievadi sākuma robežu: 0
+Lietotājs,lūdzu, ievadi beigas robežu: 2
+Lietotājs,lūdzu, ievadi precizitāti: 1.e-5
+
+integral, using rectangle rule: 14.75948
+integral, using Simpson's rule: 14.75954
+integral, using trapezoidal rule: 14.75950
+
+```
+
+### Analysis
+Comments about results  
+
+### Figures
+

@@ -1,6 +1,13 @@
+<!-- https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax -->
+# Laboratory work Nr.5. - Statistics - report
+
+## Theory
+Izmantojot Teilora rundu, var vieglāk atrast funkcijas vērtību, aizstājot funkciju ar pakāpes serijas summu.   
+
+### Code
+```
 #include<stdio.h>
 #include<string.h>
-
 
 void main()
 {
@@ -66,4 +73,25 @@ void main()
 }
 }
 
+```
+Comments about code  
+
+### Result
+```
+Lūdzu, ievadiet teikumu : area
+Simbolu rindas simboli alfabēta kārtībā - aaer
+97 97 101 114 Simbolu rindas garums - 4
+Vidēja vērtība - 409
+Min = 97
+Max = 114
+Med = 107
+Ievadītas rindas moda ir 97
+----------------------------------
+
+```
+
+### Analysis
+Comments about results  
+
+### Figures
 

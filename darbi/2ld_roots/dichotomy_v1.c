@@ -2,8 +2,10 @@
 #include<math.h>
 
 int main() {
- float a,c ,b ,x ,delta_x/*0.00001*/,funkca, funkcb, funkcx;
+ float a,c ,b ,x ,delta_x,funkca, funkcb, funkcx;
  int i=0;
+
+  printf("Funkcijas saknes aprēķināšana: \n");
 
   printf("Lietotājs,lūdzu, ievadi sākuma robežu: ");
   scanf ("%f", &a);
@@ -14,7 +16,7 @@ int main() {
   printf("Lietotājs,lūdzu, ievadi precizitāti: ");
   scanf ("%e", &delta_x);
 
-  printf("Kādam y tu vari aprēķināt x?\n");
+  printf("Lietotājs,lūdzu, ievadi, kādam y tu vari aprēķināt x: ");
   scanf ("%f", &c);
   funkca = (1+a)*exp(a) - c; funkcb = (1+b)*exp(b) - c;
 
@@ -23,7 +25,7 @@ int main() {
 
  while ((b-a)>delta_x){
   x = (a+b)/2.;
-  if(funkca*((1+x)*exp(x)-c)>0) // pie a=0 -> funkca=0 -> reizinājums precīzi ir 0
+  if(funkca*((1+x)*exp(x)-c)>0)
    a = x;
   else
    b = x;
@@ -33,7 +35,7 @@ int main() {
    i++;
  }
 
- printf("intervāls ir sašaurināts %d reizēs\n",i);
+ printf("\nIteraciju skaits: %d\n",i);
  printf("Sākne atrodas pie x=%.5f, jo (1+x)*exp(x) ir %.3f\n",x,(1+x)*exp(x));
  return 0;
 }
