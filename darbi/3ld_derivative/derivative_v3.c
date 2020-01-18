@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 void data_table_in_file(int k,float a,float b, float delta_x);
-float function(float x, float x1,float delta_x);
+double function(double x, double x1,double delta_x);
 
 void main(){
  int k=0;
@@ -23,7 +23,7 @@ void main(){
   }
  data_table_in_file(k,a,b,delta_x);
 }
-float function(float x,float x1, float delta_x){
+double function(double x, double x1,double delta_x){
 float y;
  y= (x1-x)/delta_x;
 	return y;
