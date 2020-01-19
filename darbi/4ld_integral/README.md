@@ -97,6 +97,6 @@ Izpildot šo kodu, man sanāca, ka programma aprēķinā integrāļus pareizi, i
 
 ### Attēli
 
-![Attēls no WolframAlpha]()
-![Funkcijas grafiks]()
+![Attēls no WolframAlpha](https://github.com/daniil172101/RTR105_2019/blob/master/darbi/4ld_integral/WolframAlpha_image.png)
+![Funkcijas grafiks](https://github.com/daniil172101/RTR105_2019/blob/master/darbi/4ld_integral/funkcijas_grafiks.png)
 

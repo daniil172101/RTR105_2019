@@ -95,5 +95,5 @@ Izpildot kodu, man sanāca, ka programma pareizi izpilda visus aprēķinus un ar
 
 ### Attēls
 
-![Histogramma]()
+![Histogramma](https://github.com/daniil172101/RTR105_2019/blob/master/darbi/5ld_statistics/statistika.png)
 

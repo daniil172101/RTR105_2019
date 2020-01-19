@@ -88,5 +88,5 @@ Lai atrisinātu šo problēmu, es izmantoju datus, iegūtas ar analitisko formul
 
 ### Attēls
 
-![Funkcijas un to atvasinājumu attēls]()
+![Funkcijas un to atvasinājumu attēls](https://github.com/daniil172101/RTR105_2019/blob/master/darbi/3ld_derivative/derivatives.png)
 
