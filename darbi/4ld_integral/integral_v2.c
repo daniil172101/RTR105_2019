@@ -5,6 +5,8 @@ void main(){
  int k,n=2,m=1;
  float a=0.,b=0,h,delta_x=0,int1=0.,int2=0.,int3=0.;
 
+  printf("Integrāļu aprēķināšana:\n");
+
   printf("Lietotājs,lūdzu, ievadi sākuma robežu: ");
   scanf ("%f", &a);
 
@@ -23,7 +25,7 @@ void main(){
   int2=0.;
  for(k=0;k<n;k++) int2+=h*f(a+(k+0.5)*h);
  }
- printf("\nintegral, using rectangle rule: %.5f\n",int2);
+ printf("\nintegrālis, aprēķināts ar taisnstūru metodi: %.5f\n",int2);
 
  int1 =0;
  int2 = (b-a)*(f(a)+f(b))/2.;
@@ -37,8 +39,21 @@ void main(){
  int2+=f(a)+f(b)+4*f(b-h);
  int2*=h/3;
  }
- printf("integral, using Simpson\'s rule: %.5f\n",int2);
+ printf("integrālis, aprēķināts ar Simpsona metodi: %.5f\n",int2);
 
+ n =2;
+ int1 =0;
+ int2 = (b-a)*(f(a)+f(b))/2.;
+ while(fabs(int2 - int1)>delta_x){
+  n*=2;
+  h=(b-a)/n;
+  int1=int2;
+  int2=0.;
+ for(k=1;k<n;k++) int2+=f(a+(k)*h);
+ int2+=(f(b)+f(a))/2;
+ int2*=h;
+ }
+ printf("integrālis, aprēķināts ar trapeču metodi: %.5f\n",int2);
 
 }
 

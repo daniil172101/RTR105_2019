@@ -7,6 +7,7 @@ void main(){
  int k=0;
  float a=0.,b=0.,x,delta_x=1.e-1;
 
+  printf("Funkcijas atvasinājumu aprēķināšana: \n");
   printf("Lietotājs,lūdzu, ievadi sākuma robežu: ");
   scanf ("%f", &a);
 

@@ -1,18 +1,21 @@
 <!-- https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax -->
-# Laboratory work Nr.3. - Derivative - report
+# Laboratorijas darbs Nr.3. - Skaitliskā diferencēšana - atskaite
 
-## Theory
-Izmantojot Teilora rundu, var vieglāk atrast funkcijas vērtību, aizstājot funkciju ar pakāpes serijas summu.   
+## Teorija
+Parasti, lai aprēķināt atvasinājumus, izmanto analitiskās formulas, bet ir iespējams izmantot arī citu paņēmienu.
+Var aprēķināt atvasinājumus, izmantojot forward difference metodu.
+Lai saprast šo metodu, es izmantoju sekojošu informācijas avotu: https://en.wikipedia.org/wiki/Finite_difference   
 
-### Code
+### Kods
 ```
 #include<stdio.h>
 #include<math.h>
-float function1(float x, float x1);
-float function2(float x, float x1);
+void data_table_in_file(int k,float a,float b, float delta_x);
+double function(double x, double x1,double delta_x);
+
 void main(){
- float a=0.,b=2,x=0.,x1=0.,delta_x=1.e-1,y1=0.,y2=0.,y3=0.,y4=0.,y5=0.;
- FILE *fp = fopen("./derivative.dat", "w");
+ int k=0;
+ float a=0.,b=0.,x,delta_x=1.e-1;
 
   printf("Lietotājs,lūdzu, ievadi sākuma robežu: ");
   scanf ("%f", &a);
@@ -23,61 +26,67 @@ void main(){
   printf("Lietotājs,lūdzu, ievadi precizitāti: ");
   scanf ("%e", &delta_x);
 
+  x=a;
+  while(x<=b){
+  k++;
+  x+= delta_x;
+  }
+ data_table_in_file(k,a,b,delta_x);
+}
+double function(double x, double x1,double delta_x){
+float y;
+ y= (x1-x)/delta_x;
+	return y;
+}
+
+void data_table_in_file(int k,float a,float b, float delta_x){
+int i;
+float x[k],y1[k],y2[k],y3[k],y4[k],y5[k];
+ FILE *fp = fopen("./derivative.dat", "w");
  fprintf(fp,"\tx\t\tf(x)\t\tf\'(x)\t\tf\"(x)\t\tf\'(x)\t\tf\"(x)\n");
- x = a;
- while(x<b){
-  fprintf(fp,"%10.2f\t%13.2f\t%13.2f\t%13.2f\t%13.2f\t%13.2f\n",x,y1,y2,y3,y4/delta_x,y5/delta_x);
-  x += delta_x;//x = + delta_x;
-  x1= x + delta_x;
-  y1 = (1+x)*exp(x);//analytic
-  y2 = (2+x)*exp(x);//analytic
-  y3 = (3+x)*exp(x);//analytic
-  y4= function1(x,x1);//forward difference
-  y5= function2(x,x1);//forward difference
+
+ for(i=0;i<k;i++){
+ if (i==0)
+  x[i]=a;
+ else
+  x[i] = x[i-1] + delta_x;
+ y1[i] = (1+x[i])*exp(x[i]);//analytic
+ y2[i] = (2+x[i])*exp(x[i]);//analytic
+ y3[i] = (3+x[i])*exp(x[i]);//analytic
  }
+
+ for(i=0;i<(k-1);i++)
+  y4[i]= function(y1[i],y1[i+1],delta_x);//forward difference
+
+
+ for(i=0;i<(k-2);i++)
+  y5[i] = function(y2[i],y2[i+1],delta_x);//forward difference
+  for(i=0;i<k;i++)
+   fprintf(fp,"%10.2f\t%13.2f\t%13.2f\t%13.2f\t%13.2f\t%13.2f\n",x[i],y1[i],y2[i],y3[i],y4[i],y5[i]);
  fclose(fp);
 }
-float function1(float x,float x1){
-float y;
- y= ((1+x1)*exp(x1))-((1+x)*exp(x));
-        return y;
-}
-float function2(float x,float x1){
-float y;
- y= ((2+x1)*exp(x1))-((2+x)*exp(x));
-        return y;
-}
 
 ```
-Comments about code  
+Kad programma izpildās, lietotājs ievada intervāla sākumu un beigas, kā arī vajadzīgo precezitāti.
+Pēc tam programma atrisina pirmās un otrās kārtas atvasinājumus gan izmantojot analitisko formulu, gan izmantojot diferencēšanu uz priekšu.
+y1,y2 un y3 ir atrisināti analitiski, bet y4 un y4 - izmantojot diferencēšanu uz priekšu.
 
-### Result
+### Rezultāts
 ```
-Funkcijas (1+x)*exp(x) aprēķināšana: 
-Lietotājs, lūdzu, ievadi x vērtību: 2.05
-(1 + 2.05)*exp(2.05) = 23.69
-a0 = 3.050000e+00	S0 =3.05
-a999 = 0.000000e+00	S999 =23.69
-a1000 = 0.000000e+00	S1000 =23.69
-
-		1000
-		----
-		\		        k
-		 \		(1+x)*x
-f(x)=		|	    ----------------
-		 /		   k!
-		/
-		----
-		k=0
-
-			x
-R=		   -----------
-			k
+Funkcijas atvasinājumu aprēķināšana: 
+Lietotājs,lūdzu, ievadi sākuma robežu: 0
+Lietotājs,lūdzu, ievadi beigas robežu: 3
+Lietotājs,lūdzu, ievadi precizitāti: 1.e-5
 
 ```
 
-### Analysis
-Comments about results  
+### Analīze
+Izpildot šo programmu, man sanāca, ka programma pareizi aprēķinā atvasinājumus, izmantojot gan analitiskās formulas, gan izmantojot diferencēšanu uz priekšu.
+Rakstot šo programmu, es pamanīju, ka, ja izmantot datus, iegūtas ar diferencēšanu uz priekšu, otras kārtas atvasinājumu aprēķināšanai ar to pašu metodu, tad rezultāti nesakrīt ar datiem, iegūtas ar analitisko formulu.
+Tas notiek, jo šajā gadijuma starpība starp datiem ir niecīga, tāpēc paradās nepareizi rezultāti.
+Lai atrisinātu šo problēmu, es izmantoju datus, iegūtas ar analitisko formulu, otras kārtas atvasinājumu aprēķināšanai ar diferencēšanu uz priekšu.
 
-### Figures
+### Attēls
+
+![Funkcijas un to atvasinājumu attēls]()
 

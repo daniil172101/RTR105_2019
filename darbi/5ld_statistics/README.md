@@ -1,10 +1,11 @@
 <!-- https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax -->
-# Laboratory work Nr.5. - Statistics - report
+# Laboratorijas darbs Nr.5. - Statistika - atskaite
 
-## Theory
-Izmantojot Teilora rundu, var vieglāk atrast funkcijas vērtību, aizstājot funkciju ar pakāpes serijas summu.   
+## Teorija
+Ja ir vajadzīgi izpildīt kādas statistikas uzdevumus vai kārtošanu, mēs varam izmantot C valodu.
+Lai tas paradītu, es uzrakstīju programmu, kura kārto un atrod modu, mediānu, vidējo, minimālo un maksimālo simbolu vērtību(pēc ASCII tabulas) ievadītai simbolu rindai.    
 
-### Code
+### Kods
 ```
 #include<stdio.h>
 #include<string.h>
@@ -73,10 +74,9 @@ void main()
 }
 }
 
-```
-Comments about code  
+```  
 
-### Result
+### Rezultāts
 ```
 Lūdzu, ievadiet teikumu : area
 Simbolu rindas simboli alfabēta kārtībā - aaer
@@ -90,8 +90,10 @@ Ievadītas rindas moda ir 97
 
 ```
 
-### Analysis
-Comments about results  
+### Analīze
+Izpildot kodu, man sanāca, ka programma pareizi izpilda visus aprēķinus un arī pareizi sakārto simbolus alfabēta secībā.
 
-### Figures
+### Attēls
+
+![Histogramma]()
 

@@ -1,10 +1,10 @@
 <!-- https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax -->
-# Laboratory work Nr.1. - Taylor series - report
+# Laboratorijas darbs Nr.1. - Teilora rinda - atskaite
 
-## Theory
-Izmantojot Teilora rundu, var vieglāk atrast funkcijas vērtību, aizstājot funkciju ar pakāpes serijas summu.   
+## Teorija
+Izmantojot Teilora rundu, var vieglāk atrast funkcijas vērtību, aizstājot funkciju ar pakāpes serijas summu.
 
-### Code
+### Kods
 ```
 #include<stdio.h>
 #include<math.h>
@@ -55,7 +55,7 @@ void main(){
 ```
 Comments about code  
 
-### Result
+### Rezultāts
 ```
 Funkcijas (1+x)*exp(x) aprēķināšana: 
 Lietotājs, lūdzu, ievadi x vērtību: 2.05
@@ -80,8 +80,9 @@ R=		   -----------
 
 ```
 
-### Analysis
-Comments about results  
+### Analīze
+Izpildot kodu, man sanāca, ka rezultāti, kuri ir iegūti ar Teilora rindu palīdzību, sakrīt ar apŗēķinātu funkcijas vērtību.  
 
-### Figures
+### Attēli
 
+![Funkcijas grafiks](https://github.com/daniil172101/RTR105_2019/blob/master/darbi/1ld_series/funkcija.png)
