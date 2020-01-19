@@ -49,7 +49,6 @@ int main() {
 }
 
 ```
-Comments about code  
 
 ### Rezultāts
 ```
