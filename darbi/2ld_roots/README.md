@@ -1,10 +1,10 @@
 <!-- https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax -->
 # Laboratory work Nr.2. - Roots - report
 
-## Theory
-Izmantojot Teilora rundu, var vieglāk atrast funkcijas vērtību, aizstājot funkciju ar pakāpes serijas summu.   
+## Teorija
+Izmantojot Dihotomijas metodu , var atrast funkcijas saknes noteiktajā intervālā, ka arī atrast x vērtību zinot funkcijas vērtību.Lai pielietot dihotomijas metodu, lai atrast x vērtību noteiktajai funkcijas vērtībai( f(x) = C ), ir jāpārveido izteiksmi, pārvietojot C vērtību pa kreisi un iegūstot izteiksmi f(x) - C = 0.    
 
-### Code
+### Kods
 ```
 #include<stdio.h>
 #include<math.h>
@@ -38,8 +38,8 @@ int main() {
   else
    b = x;
   printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\t",a,a,c,funkca);
-  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\t",x,x,c,funkcb);
-  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\n",b,b,c,(1+x)*exp(x)-c);
+  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\t",b,b,c,funkcb);
+  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\n",x,x,c,(1+x)*exp(x)-c);
    i++;
  }
 
@@ -51,7 +51,7 @@ int main() {
 ```
 Comments about code  
 
-### Result
+### Resultāts
 ```
 Funkcijas saknes aprēķināšana: 
 Lietotājs,lūdzu, ievadi sākuma robežu: 0
@@ -86,8 +86,9 @@ Sākne atrodas pie x=2.14005, jo (1+x)*exp(x) ir 26.690
 
 ```
 
-### Analysis
-Comments about results  
+### Analīze
+Programas izpildīšanas rezultātā man sanāca, ka programa pareizi atrod x vērtību dotajai funkcijas vērtībai.
 
-### Figures
+### Bildes
+![Funkcijas grafiks ar atzīmētu saknes punktu](https://github.com/daniil172101/RTR105_2019/darbi/2ld_roots/roots.png)
 

@@ -50,7 +50,7 @@ float x[k],y1[k],y2[k],y3[k],y4[k],y5[k];
 
 
  for(i=0;i<(k-2);i++)
-  y5[i] = function(y4[i],y4[i+1],delta_x);//forward difference
+  y5[i] = function(y2[i],y2[i+1],delta_x);//forward difference
   for(i=0;i<k;i++)
    fprintf(fp,"%10.2f\t%13.2f\t%13.2f\t%13.2f\t%13.2f\t%13.2f\n",x[i],y1[i],y2[i],y3[i],y4[i],y5[i]);
  fclose(fp);

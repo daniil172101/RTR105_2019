@@ -30,8 +30,8 @@ int main() {
   else
    b = x;
   printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\t",a,a,c,funkca);
-  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\t",x,x,c,funkcb);
-  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\n",b,b,c,(1+x)*exp(x)-c);
+  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\t",b,b,c,funkcb);
+  printf("(1+%7.3f)*exp(%7.3f) - %7.3f =%7.3f\n",x,x,c,(1+x)*exp(x)-c);
    i++;
  }
 
