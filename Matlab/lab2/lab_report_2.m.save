@@ -1,0 +1,25 @@
+%% 2.laboratorijas darbs
+%% Mērījumu datu apstrāde
+%% Mērķi:
+% * Iemācīties apstrādāt mērījumu datus
+% * Iemācīties lietot polyfit,polyval
+% * Iemācīties veidot darba atskaites
+% * izmantojot "publish"
+%% Darba programma:
+syms a b x
+x_ans = solve(a + exp(b*x^2-a*x)==100);
+pretty(x_ans)
+syms x y
+y = 1/(x - cos(x));
+yd = simplify(diff(y));
+yv = vectorize(y);
+
+%%
+%
+%
+%
+%% Secinājumi:
+% Secinājumos mēs rakstīsim par to
+% ko mēs esam iemācījušies šinī darbā
+% vai arī skatāmies darba mērķi un
+% rakstīsim secinājumus
