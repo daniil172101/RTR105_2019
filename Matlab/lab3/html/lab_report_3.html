@@ -1,0 +1,185 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>3.laboratorijas darbs</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2020-03-02"><meta name="DC.source" content="lab_report_3.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>3.laboratorijas darbs</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Gabalveida sign&#257;la mont&#257;&#382;a</a></li><li><a href="#2">M&#275;r&#311;i:</a></li><li><a href="#3">Darba programma:</a></li><li><a href="#6">Secin&#257;jumi:</a></li></ul></div><h2 id="1">Gabalveida sign&#257;la mont&#257;&#382;a</h2><h2 id="2">M&#275;r&#311;i:</h2><div><ul><li>Iem&#257;c&#299;ties izveidot atsevi&#353;&#311;us funkcijas no sign&#257;la</li><li>Iem&#257;c&#299;ties konstru&#275;t funkcijas grafikus no sign&#257;la pa gabaliem</li><li>Iem&#257;c&#299;ties apvienot visas atsevi&#353;&#311;as funkcijas vien&#257; sign&#257;lu funkcij&#257;</li><li>Iem&#257;c&#299;ties veikt datu filtr&#257;ciju</li><li>Iem&#257;c&#299;ties p&#257;rveidot skriptu par funkciju</li></ul></div><h2 id="3">Darba programma:</h2><pre class="codeinput"><span class="keyword">function</span> y = lab_darbs_3(t)
+</pre><pre class="codeinput"><span class="keyword">if</span> nargin == 0
+    t = 0:0.01:6.5;
+<span class="keyword">end</span>
+
+t_sin_f = (t&gt;=4.5)&amp;(t&lt;=6.5);
+t_sin = t(t_sin_f);
+
+t_zero_f = (t&gt;=0)&amp;(t&lt;1);
+t_zero = t(t_zero_f);
+
+t_const_f = (t&gt;=4)&amp;(t&lt;4.5);
+t_const = t(t_const_f);
+
+t_saw_f = (t&gt;=1)&amp;(t&lt;2.5);
+t_saw = t(t_saw_f);
+
+t_noise_f = (t&gt;=2.5)&amp;(t&lt;4);
+t_noise = t(t_noise_f);
+
+A0 = 0; A = 2.5;
+T = (6.5-4.5)/8; f = 1/T;
+delay = 4.5;
+y_sin = A0+A*sin(2*pi*f*(t_sin-delay));
+
+y_zero = zeros(size(t_zero));
+
+y_const=zeros(size(t_const))-2.5;
+
+
+y_noise = 2.5*rand(size(t_noise))-1.25;
+
+
+
+k = (1.5+1.5)/(1-2.5);
+delay = 1.75;
+y_saw = k*(t_saw-delay);
+
+t = [t_zero,t_saw,t_noise,t_const,t_sin];
+y = [y_zero,y_saw,y_noise,y_const,y_sin];
+<span class="keyword">if</span> nargout == 0
+    plot(t,y)
+    y = [];
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">
+ans =
+
+     []
+
+</pre><img vspace="5" hspace="5" src="lab_report_3_01.png" alt=""> <h2 id="6">Secin&#257;jumi:</h2><p>Secin&#257;jum&#257; es iem&#257;c&#299;jos izveidot sign&#257;lu funkciju, dalot sign&#257;lu uz atsevi&#353;&#311;iem gabaliem un apvienojot tos vien&#257; sign&#257;lu funkcija. Ar&#299; es iem&#257;c&#299;jos izmantot datu filtr&#257;ciju un p&#257;rveidot skriptu par funkciju. Visi darba m&#275;r&#311;i ir sasniegti.</p><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% 3.laboratorijas darbs
+%% Gabalveida signāla montāža
+%% Mērķi:
+% * Iemācīties izveidot atsevišķus funkcijas no signāla
+% * Iemācīties konstruēt funkcijas grafikus no signāla pa gabaliem
+% * Iemācīties apvienot visas atsevišķas funkcijas vienā signālu funkcijā
+% * Iemācīties veikt datu filtrāciju
+% * Iemācīties pārveidot skriptu par funkciju
+%% Darba programma:
+function y = lab_darbs_3(t)
+if nargin == 0
+    t = 0:0.01:6.5;
+end
+
+t_sin_f = (t>=4.5)&(t<=6.5);
+t_sin = t(t_sin_f);
+
+t_zero_f = (t>=0)&(t<1);
+t_zero = t(t_zero_f);
+
+t_const_f = (t>=4)&(t<4.5);
+t_const = t(t_const_f);
+
+t_saw_f = (t>=1)&(t<2.5);
+t_saw = t(t_saw_f);
+
+t_noise_f = (t>=2.5)&(t<4);
+t_noise = t(t_noise_f);
+
+A0 = 0; A = 2.5;
+T = (6.5-4.5)/8; f = 1/T;
+delay = 4.5;
+y_sin = A0+A*sin(2*pi*f*(t_sin-delay));
+
+y_zero = zeros(size(t_zero));
+
+y_const=zeros(size(t_const))-2.5;
+
+
+y_noise = 2.5*rand(size(t_noise))-1.25;
+
+
+
+k = (1.5+1.5)/(1-2.5);
+delay = 1.75;
+y_saw = k*(t_saw-delay);
+
+t = [t_zero,t_saw,t_noise,t_const,t_sin];
+y = [y_zero,y_saw,y_noise,y_const,y_sin];
+if nargout == 0
+    plot(t,y)
+    y = [];
+end
+%%
+%
+%
+%% Secinājumi:
+% Secinājumā es iemācījos izveidot signālu
+% funkciju, dalot signālu uz atsevišķiem gabaliem
+% un apvienojot tos vienā signālu funkcija.
+% Arī es iemācījos izmantot datu filtrāciju un pārveidot
+% skriptu par funkciju.
+% Visi darba mērķi ir sasniegti.
+
+##### SOURCE END #####
+--></body></html>
